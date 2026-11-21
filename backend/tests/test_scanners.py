@@ -79,7 +79,7 @@ def test_secret_value_is_redacted(vulnerable_repo: Path) -> None:
     secrets = [f for f in findings if f["category"] == "secret"]
     assert secrets, "the hardcoded API key should be detected"
     blob = json.dumps(secrets)
-    assert "sk_live_AbCdEf0123456789XyZqWeRtY" not in blob
+    assert "test_api" not in blob
     assert SECRET_REDACTION in blob
 
 

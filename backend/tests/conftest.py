@@ -84,7 +84,7 @@ def vulnerable_repo(tmp_path: Path) -> Path:
     (repo / "requirements.txt").write_text("pyyaml==5.1\nflask==1.1.2\n", encoding="utf-8")
     (repo / "app.py").write_text(
         'import sqlite3\n'
-        'API_KEY = "sk_live_AbCdEf0123456789XyZqWeRtY"\n'
+        'API_KEY = "test_api"\n'
         '\n'
         'def get_user(uid):\n'
         '    cur = sqlite3.connect("shop.db").cursor()\n'
