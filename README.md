@@ -160,7 +160,7 @@ sequenceDiagram
 
 ### 2. Install Dependencies
 ```bash
-git clone https://github.com/shefar77/Chokepoint.git
+git clone https://github.com/Jay-Dosi/Chokepoint.git
 cd Chokepoint
 cp .env.example .env
 ```
